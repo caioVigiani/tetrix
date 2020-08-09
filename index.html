@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tetrix</title>
+		<!-- begin external import !-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- end external import !-->
+
+		<!-- begin css import !-->
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+		<!-- end css import !-->
+	</head>
+	<body>
+		<h1>Vem Jogar Safado</h1>
+		<hr>
+		<h3 id="pontuaçãoTetrix">Pontuação: <span id="pontosTetrix">0</span></h3>
+		<hr>
+		<div id="gameScreen">
+			<center>
+				<h1 id="gameOverText" class="hide">GAME OVER</h1>
+				<canvas id="myCanvas" width="200" height="400"></canvas>
+			</center>
+		</div>
+
+		<!-- begin js import !-->
+		<script type="text/javascript" src="./resources/arraysPieces.js"></script>
+
+		<script type="text/javascript" src="./helpers/Helper.js"></script>
+
+		<script type="text/javascript" src="./models/GameScreen.js"></script>
+		<script type="text/javascript" src="./models/Canvas.js"></script>
+		<script type="text/javascript" src="./models/Square.js"></script>
+		<script type="text/javascript" src="./models/Piece.js"></script>
+		<script type="text/javascript" src="./models/Game.js"></script>
+
+		<script type="text/javascript" src="./controllers/SquareController.js"></script>
+		<script type="text/javascript" src="./controllers/PieceController.js"></script>
+
+		<script type="text/javascript" src="./main.js"></script>
+		<!-- end js import !-->
+	</body>
+</html>
